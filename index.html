@@ -137,7 +137,15 @@ var inp=document.getElementById("inp").value;
 
   var im=document.getElementById('ii');
 
-let u=`https://pokeapi.co/api/v2/pokemon/${inp}`;
+let t=inp.charAt(0);
+let t1=inp.charAt(0).toLowerCase();
+let text=inp.replace(t,t1);
+console.log(text)//charAt[0])
+
+  var im=document.getElementById('ii');
+
+let u=`https://pokeapi.co/api/v2/pokemon/${text}`;
+
 
 fetch(u)
 .then((e)=> e.json())
