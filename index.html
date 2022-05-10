@@ -156,6 +156,10 @@ fetch(u)
 
  
   let n=d.name;
+let t3=n.charAt(0);
+let t4=n.charAt(0).toUpperCase();
+let text1=n.replace(t3,t4);
+console.log(text1)//charAt[0])
 
 let h=d.height;
 
@@ -167,7 +171,7 @@ let types=d.types[0].type.name;
 
   im.src=i;
 
-  p.innerHTML=n;
+  p.innerHTML=text1;
 
   p1.innerHTML=`heigh ${h}`;
 
